@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  display: block;
+  justify-items: center;
+}
+
+.container {
+  background-color: rgb(243, 247, 250);
+  border-radius: 6px;
+  width: 50%;
+  margin-top: 100px;
+  padding: 20px 40px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  color: rgb(70, 70, 255);
+  justify-self: center;
+}
+
+button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  background-color: rgb(70, 70, 255);
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.name-container {
+  font-size: 12px;
+  color: rgb(56, 56, 56);
+}
+
+.email-container {
+  font-size: 12px;
+  margin-top: 10px;
+  color: rgb(56, 56, 56);
+}
+
+#name {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 10px;
+}
+
+#name::placeholder {
+  opacity: 0.5;
+}
+
+#email {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 10px;
+}
+
+#email::placeholder {
+  opacity: 0.5;
+}
+
+#area-label {
+  font-size: 12px;
+  color: rgb(56, 56, 56);
+}
+
+#message-area {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: rgb(243, 247, 250);
+  }
+  .container {
+    background-color: rgb(255, 255, 255);
+  }
+  #name {
+    background-color: rgb(243, 247, 250);
+  }
+  #email {
+    background-color: rgb(243, 247, 250);
+  }
+  textarea {
+    background-color: rgb(243, 247, 250);
+  }
+}

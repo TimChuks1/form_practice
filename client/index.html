@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form</h1>
+      <form id="the_form">
+        <div class="name-container">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            placeholder="type in your name..."
+            id="name"
+            required
+          /><br />
+        </div>
+        <div class="email-container">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            placeholder="email..."
+            id="email"
+            required
+          /><br />
+        </div>
+        <button type="submit">submit</button>
+      </form>
+      <div>
+        <label for="message-area" id="area-label">Input output</label><br />
+        <textarea name="message-area" id="message-area" rows="4"></textarea>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
