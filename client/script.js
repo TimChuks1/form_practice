@@ -29,3 +29,4 @@ async function onSubmit(e) {
     alert("Something went wrong");
   }
 }
+form.addEventListener("submit", onSubmit);
