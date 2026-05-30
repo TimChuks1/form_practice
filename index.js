@@ -1,5 +1,6 @@
-import path from "path";
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import cors from "cors";
 import router from "./route/userRoutes.js";
@@ -12,7 +13,8 @@ mongoose
   .catch(() => console.error("Error connecting MongoDB"));
 
 const app = express();
-const _dirname = path.resolve();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const Port = process.env.PORT;
 
 app.use(express.json());
